@@ -1,28 +1,40 @@
 import React, { useState } from 'react';
+import { FiSearch, FiHeart, FiUser, FiShoppingBag, FiChevronDown } from 'react-icons/fi'; 
 import './Header.css';
 
 const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLanguageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+  const toggleLanguageDropdown = () => {
+    setLanguageDropdownOpen(!isLanguageDropdownOpen);
   };
 
   return (
     <header className="header">
       <div className="logo">
-        <img src="/path-to-your-logo" alt="Logo" />
+        <img src="https://img.freepik.com/premium-photo/close-up-black-white-logo-with-zebra_1035766-32091.jpg?ga=GA1.1.524228739.1726244464&semt=ais_hybrid" alt="Logo" />
       </div>
+
+    <h1>LOGO</h1>
 
       <nav className="header-icons">
-        <div className="language-select">
-          ENG <span className="dropdown-arrow">▼</span>
+        <FiSearch className="icon" />
+        <FiHeart className="icon" />
+        <FiUser className="icon" />
+        <FiShoppingBag className="icon" />
+        
+        <div className="language-select" onClick={toggleLanguageDropdown}>
+          ENG <FiChevronDown className="dropdown-arrow" />
+          {isLanguageDropdownOpen && (
+            <ul className="language-dropdown">
+              <li>English</li>
+              <li>Spanish</li>
+              <li>French</li>
+              <li>German</li>
+            </ul>
+          )}
         </div>
       </nav>
-
-      <div className="hamburger" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <FaRegTimesCircle className="icon" /> : <div className="hamburger-lines"></div>}
-      </div>
     </header>
   );
 };

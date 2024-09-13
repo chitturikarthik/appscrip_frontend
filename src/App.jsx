@@ -11,6 +11,10 @@ function App() {
     <div className="app">
       <Header />
       <Navbar />
+      <div className='after_nav'>
+        <h1>DISCOVER OUR PRODUCTS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus veniam porro animi esse repudiandae nostrum ad labore consectetur numquam molestiae.</p>
+      </div>
       <div className="main-content">
         <Sidebar />
         <ProductList />

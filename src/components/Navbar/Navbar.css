@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 15px 0;
+  padding: 20px 0  20px 0;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
@@ -21,8 +21,12 @@
 }
 
 .navbar ul li a {
+  font-family: "Staatliches", sans-serif;
   text-decoration: none;
-  color: black;
+  letter-spacing: 1px;
+  color: #222;
+  font-weight: 500;
+  
 }
 
 .navbar ul li a:hover {

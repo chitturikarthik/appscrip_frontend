@@ -23,7 +23,7 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
-  // Sort products based on sortType
+ //for filtering the products
   useEffect(() => {
     let sortedProducts = [...products];
 
@@ -44,9 +44,6 @@ const ProductList = () => {
 
   return (
     <div className="product-list">
-      <h1>DISCOVER OUR PRODUCTS</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
       <ProductFilter handleSort={handleSort} />
 
       <div className="products-grid">
