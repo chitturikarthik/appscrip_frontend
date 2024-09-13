@@ -1,0 +1,15 @@
+.product-filter {
+    margin-bottom: 20px;
+  }
+  
+  .product-filter label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .product-filter select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  

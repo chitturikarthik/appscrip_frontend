@@ -1,0 +1,73 @@
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+  
+  .filter-section:last-child {
+    border-bottom: none;
+  }
+  
+  .filter-section h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .filter-section input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .clear-filter {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  .clear-filter:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 0;
+    }
+  
+    .filter-section {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
+  }
