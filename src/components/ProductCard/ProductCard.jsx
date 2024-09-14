@@ -9,7 +9,6 @@ const ProductCard = ({ product }) => {
       <img src={product.image} alt={product.title} />
       <h3>{limitedTitle}</h3>
       <p>{product.price.toFixed(2)} USD</p>
-      {/* <button>Add to Cart</button> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@
 .product-list h1 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000;
+  color: #222;
 }
 
 .product-list p {
@@ -18,43 +18,39 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  padding-right:1rem;
 }
 
 .product-card {
-  flex: 1 1 21%; /* 4 items per row for larger screens */
+  flex: 1 1 21%; 
   box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
   .product-card {
-    flex: 1 1 30%; /* 3 items per row for tablets */
+    flex: 1 1 30%;
   }
 }
 
 @media (max-width: 768px) {
   .product-card {
-    flex: 1 1 45%; /* 2 items per row for smaller tablets */
+    flex: 1 1 45%; 
   }
 }
 
 @media (max-width: 480px) {
   .product-card {
-    flex: 1 1 100%; /* 1 item per row for mobile */
+    flex: 1 1 100%; 
   }
 }
 
-.load-more {
+.load-more-button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #222;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-}
-
-.load-more:hover {
-  background-color: #0056b3;
 }

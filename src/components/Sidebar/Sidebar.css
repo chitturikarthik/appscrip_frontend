@@ -1,5 +1,5 @@
 .sidebar {
-    width: 50%;
+    width: 250px;
     padding: 20px;
     background-color: #fff;
     border-right: 1px solid #e0e0e0;
@@ -48,16 +48,12 @@
   .clear-filter {
     background-color: transparent;
     border: none;
-    color: #007bff;
+    color: #222;
     cursor: pointer;
     font-size: 12px;
     padding: 0;
     text-decoration: underline;
     margin-bottom: 10px;
-  }
-  
-  .clear-filter:hover {
-    color: #0056b3;
   }
   
   @media (max-width: 768px) {
@@ -73,3 +69,18 @@
       padding-bottom: 10px;
     }
   }
+
+
+  .toggle-sidebar-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-sidebar-button:hover {
+    background-color: #222;
+  }
+  

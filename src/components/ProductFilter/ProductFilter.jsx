@@ -4,7 +4,7 @@ import './ProductFilter.css';
 const ProductFilter = ({ handleSort }) => {
   return (
     <div className="product-filter">
-      <label htmlFor="sort">Sort By:</label>
+      <label htmlFor="sort"></label>
       <select id="sort" onChange={(e) => handleSort(e.target.value)}>
         <option value="default">Default</option>
         <option value="low-to-high">Price: Low to High</option>

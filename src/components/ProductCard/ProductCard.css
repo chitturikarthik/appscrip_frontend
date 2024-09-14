@@ -2,7 +2,7 @@
     padding: 10px;
     text-align: center;
     transition: box-shadow 0.3s ease;
-    background:linear-gradient(to bottom, #fff, #eee);
+    background:linear-gradient(to bottom, #fff, #eee, #fff);
   }
   
   .product-card:hover {
